@@ -1,0 +1,24 @@
+1. Install React Native Snippets
+
+ES7+ React/Redux/React-Native snippets  v4.4.3 
+
+Extensions for React, React-Native and Redux in JS/TS with ES7+ syntax. Customizable. Built-in integration with prettier.
+Publisher: dsznajder
+
+
+2. npx create-react-app react-app
+   Create react app framework with this command 
+
+3. Install mui icon which doesn't included in the react framework by default
+   https://www.npmjs.com/package/@mui/icons-material
+
+Command:
+npm i @mui/icons-material
+
+npm install @mui/icons-material
+
+
+
+4. Install react router dom:
+Command:
+npm install react-router-dom
