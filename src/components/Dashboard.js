@@ -1,9 +1,21 @@
-import React from 'react'
+import React from 'react';
+import Navbar from './Navbar';
+import { Outlet } from 'react-router-dom'; // For rendering child routes
 
 function Dashboard() {
+    const loginSuccess = false;
+
     return (
-        <div>Dashboard</div>
-    )
+        <>
+            {loginSuccess && (
+                <div>
+                    <Navbar />
+                    <Outlet />
+                    <div>Dashboard</div>
+                </div>
+            )}
+        </>
+    );
 }
 
-export default Dashboard
+export default Dashboard;
