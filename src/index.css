@@ -11,3 +11,11 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.bg-img {
+  background: url(../src/assets/images/bg-img.jpg) no-repeat bottom !important;
+}
+
+.css-atovpb-MuiTypography-root {
+  color: #fff !important;
+}

@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 Install React Native Snippets
 Use the ES7+ React/Redux/React-Native snippets v4.4.3 extension for React, React-Native, and Redux development in JavaScript/TypeScript with ES7+ syntax. It’s customizable and has built-in Prettier integration.
 
@@ -13,6 +13,7 @@ MUI Icons Package
 
 Install React Router DOM for client-side routing:
 npm install react-router-dom
+=======
 =======
 # Getting Started with Create React App
 
@@ -84,4 +85,3 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `npm run build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
->>>>>>> cbf705d (Initialize project using Create React App)

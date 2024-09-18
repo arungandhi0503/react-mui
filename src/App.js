@@ -1,13 +1,10 @@
 import * as React from 'react';
 import './App.css';
-import Navbar from './components/Navbar';
-import { Outlet } from 'react-router-dom'; // For rendering child routes
-
+import Login from './components/Login';
 function App() {
   return (
     <div>
-      <Navbar /> {/* Navbar will always be visible */}
-      <Outlet /> {/* This Outlet renders the matched route component */}
+      <Login /> {/* Navbar will always be visible */}
     </div>
   );
 }
