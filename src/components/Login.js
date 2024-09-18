@@ -118,27 +118,28 @@ function Login() {
 
             <Grid container spacing={4} sx={{
                 justifyContent: 'center',
-                p: 5,
+                p: 2,
                 m: 'auto',
             }}>
-                <Grid spacing={4} size={{ xs: 12, md: 6 }} className="bg-img"
-                    sx={{ flexDirection: 'column', alignSelf: 'auto', gap: 4, color: '#fff', height: '100vh', padding: 6 }}
-                >
-                    {items.map((item, index) => (
-                        <Stack key={index} direction="row" sx={{ gap: 2 }}>
-                            {item.icon}
-                            <div>
-                                <Typography gutterBottom sx={{ fontWeight: 'medium', fontSize: '3rem' }}>
-                                    {item.title}
-                                </Typography>
-                                <Typography variant="body2" sx={{ color: 'text.secondary' }}>
-                                    {item.description}
-                                </Typography>
-                            </div>
-                        </Stack>
-                    ))}
+                <Grid spacing={4} size={{ xs: 12, md: 6 }}>
+                    <Box sx={{ display: { xs: 'none', sm: 'none', md: 'block' }, flexDirection: 'column', alignSelf: 'auto', gap: 4, color: '#fff', height: '100vh', padding: 6 }} className="bg-img">
+                        {items.map((item, index) => (
+                            <Stack key={index} direction="row" sx={{ gap: 2 }}>
+                                {item.icon}
+                                <div>
+                                    <Typography gutterBottom sx={{ fontWeight: 'medium', fontSize: '3rem' }}>
+                                        {item.title}
+                                    </Typography>
+                                    <Typography variant="body2" sx={{ color: 'text.secondary' }}>
+                                        {item.description}
+                                    </Typography>
+                                </div>
+                            </Stack>
+                        ))}
+                    </Box>
                 </Grid>
-                <Grid size={{ xs: 12, md: 6 }} spacing={4}><Box sx={{ padding: 6 }}>
+
+                <Grid size={{ xs: 12, md: 6 }} spacing={4}><Box sx={{ padding: 2 }}>
                     <Box sx={{ display: { xs: 'flex', md: 'none' } }}>
                         {/* <SitemarkIcon /> */}
                     </Box>
@@ -150,10 +151,10 @@ function Login() {
                         Sign in
                     </Typography>
                     <Box>
-                        <Grid container sx={{ padding: 2 }}>
+                        <Grid container sx={{ padding: 1 }}>
                             {/* Left Column */}
                             <Grid size={{ xs: 12, md: 6 }}>
-                                <Box sx={{ padding: 2 }}>
+                                <Box sx={{ padding: 1 }}>
                                     <ThemeProvider theme={secondaryButtonTheme}>
                                         <Button
                                             type="submit"
@@ -170,7 +171,7 @@ function Login() {
 
                             {/* Right Column */}
                             <Grid size={{ xs: 12, md: 6 }}>
-                                <Box sx={{ padding: 2 }}>
+                                <Box sx={{ padding: 1 }}>
                                     <ThemeProvider theme={secondaryButtonTheme}>
                                         <Button
                                             type="submit"
@@ -185,7 +186,13 @@ function Login() {
                                 </Box>
                             </Grid>
                         </Grid>
-                    </Box><Divider>or</Divider>
+                    </Box><Box sx={{ width: '100%', position: 'relative', mt: 2, mb: 2 }}>
+                        <Divider>
+                            <Typography variant="body1" sx={{ textAlign: 'left', width: '100%' }}>
+                                OR LOGIN WITH
+                            </Typography>
+                        </Divider>
+                    </Box>
                     <Box
                         component="form"
                         onSubmit={handleSubmit}
@@ -272,7 +279,7 @@ function Login() {
                 </Box>
 
                 </Grid>
-            </Grid>
+            </Grid >
         </>
 
 
