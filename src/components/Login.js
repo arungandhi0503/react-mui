@@ -15,6 +15,8 @@ import { ThemeProvider, createTheme } from '@mui/material';
 import Stack from '@mui/material/Stack';
 import AppleIcon from '@mui/icons-material/Apple';
 import GoogleIcon from '@mui/icons-material/Google';
+import { useNavigate } from "react-router-dom";
+
 const primaryButtonTheme = createTheme({
     components: {
         MuiButton: {
@@ -63,11 +65,17 @@ const items = [
 ];
 
 function Login() {
+    const navigate = useNavigate();
     const [emailError, setEmailError] = React.useState(false);
     const [emailErrorMessage, setEmailErrorMessage] = React.useState('');
     const [passwordError, setPasswordError] = React.useState(false);
     const [passwordErrorMessage, setPasswordErrorMessage] = React.useState('');
     const [open, setOpen] = React.useState(false);
+
+    const handleFormRegistration = (e) => {
+        e.preventDefault();
+        navigate("/form-registration");
+    }
 
     const handleClickOpen = () => {
         setOpen(true);
@@ -270,6 +278,7 @@ function Login() {
                                     href="/material-ui/getting-started/templates/sign-in/"
                                     variant="body2"
                                     sx={{ alignSelf: 'center' }}
+                                    onClick={handleFormRegistration}
                                 >
                                     Sign up
                                 </Link>

@@ -4,7 +4,7 @@ import Login from './components/Login';
 function App() {
   return (
     <div>
-      <Login /> {/* Navbar will always be visible */}
+      <Login />
     </div>
   );
 }

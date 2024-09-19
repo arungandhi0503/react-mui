@@ -13,13 +13,16 @@ import Services from './components/Services';
 import Products from './components/Products';
 import Dashboard from './components/Dashboard';
 
+import '../node_modules/bootstrap/dist/css/bootstrap.min.css';
+import FormRegistration from './components/FormRegistration';
+
 const router = createBrowserRouter([
   {
     path: "/",
     element: <App />,
     children: [
       {
-        path: "/",
+        path: "/dashboard",
         element: <Dashboard />
       },
       {
@@ -38,7 +41,12 @@ const router = createBrowserRouter([
         path: "*",
         element: <ErrorPage />
       }]
-  }]
+  },
+  {
+    path: "/form-registration",
+    element: <FormRegistration />
+  },
+]
 );
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
